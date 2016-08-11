@@ -56,6 +56,7 @@
                     <li @if(request()->route()->getName() == 'website.blog') class="active" @endif><a href="{{ route('website.blog') }}">文章</a></li>
                     <li @if(request()->route()->getName() == 'website.topic') class="active" @endif><a href="{{ route('website.topic') }}">话题</a></li>
                     <li @if(request()->route()->getName() == 'website.shop') class="active" @endif><a href="{{ route('website.shop') }}">商城</a></li>
+                    <li @if(request()->route()->getName() == 'website.juanzhen') class="active" @endif><a href="{{url('/juanzhen')}}">捐赠</a></li>
                 </ul>
                 @if (Auth::guest())
                     <ul class="nav navbar-nav navbar-right">
@@ -174,7 +175,7 @@
                         <a href="javascript:void(0);" class="send-email-token">重新发送激活邮件</a>
                     </p>
                     <div class="send-email-tips" style="display: none">
-                        <div class="alert alert-success">一封验证邮件已经发送至 <strong>{{ Auth()->user()->email }}</strong>，请登录邮箱根据提示完成操作</div>
+                        <div class="alert alert-success">一封验证邮件已经发送至 <strong>{{ Auth()->user()->email }}</strong>，请登陆邮箱根据提示完成操作</div>
                     </div>
                 </div>
             </div>

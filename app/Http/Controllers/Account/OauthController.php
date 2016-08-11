@@ -15,6 +15,7 @@ use App\Models\UserOauth;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Laravel\Socialite\Facades\Socialite;
 
 class OauthController extends Controller

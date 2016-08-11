@@ -11,6 +11,15 @@ Route::Group(['namespace'=>'Installer','middleware'=>'installer'],function(){
 });
 
 
+    Route::get('/juanzhen',['as'=>'website.juanzhen','uses'=>'About\JuanZhenController@index']);
+    Route::post('/juanzhen/send','About\JuanZhenController@send');
+    Route::get('/juanzhen/webnotify','About\JuanZhenController@webNotify');
+    Route::get('/juanzhen/webreturn','About\JuanZhenController@webReturn');
+    Route::get('/weixin/login','WeiController@index');
+    Route::get('/weixin/callback','WeiController@callback');
+
+
+
 /*首页*/
 Route::get('/',['as'=>'website.index','uses'=>'IndexController@index']);
 
@@ -396,7 +405,7 @@ Route::get('ajax/loadUsers',['middleware' =>'auth','as'=>'website.ajax.loadUsers
 Route::get('ajax/unreadMessages',['as'=>'website.ajax.unreadMessages','uses'=>'AjaxController@unreadMessages']);
 
 
-Route::get('image/avatar/{avatar_name}',['as'=>'website.image.avatar','uses'=>'ImageController@avatar'])->where(['avatar_name'=>'[0-9]+_(small|middle|big|origin)']);
+Route::get('image/avatar/{avatar_name}',['as'=>'website.image.avatar','uses'=>'ImageController@avatar'])->where(['avatar_name'=>'[0-9]+_(small|big|middle)']);
 Route::get('image/show/{image_name}',['as'=>'website.image.show','uses'=>'ImageController@show']);
 Route::get('www/getList',['as'=>'website.www.getList','uses'=>'ApiController@getList']);
 

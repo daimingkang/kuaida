@@ -13,8 +13,12 @@
         "intervention/image": "^2.3",
         "socialiteproviders/qq": "^2.0",
         "socialiteproviders/weibo": "^2.0",
-        "socialiteproviders/weixin": "^2.0",
-        "sdfsky/tipask-xunsearch": "dev-master"
+        "socialiteproviders/weixin": "^2.1",
+        "sdfsky/tipask-xunsearch": "dev-master",
+        "overtrue/laravel-wechat": "2.1.*",
+        "latrell/alipay": "dev-master",
+        "labs7in0/omnipay-wechat": "dev-master",
+        "laravel/socialite": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

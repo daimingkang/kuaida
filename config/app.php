@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', true),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -136,7 +136,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Latrell\Alipay\AlipayServiceProvider::class,//支付宝
+        Overtrue\LaravelWechat\ServiceProvider::class,//微信
+        Laravel\Socialite\SocialiteServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -203,6 +205,9 @@ return [
         'Image'     => Intervention\Image\Facades\Image::class,
         'Purifier' => Mews\Purifier\Facades\Purifier::class,
         'Search' => Sdfsky\TipaskXunSearch\Facade::class,
+        'Wechat' => Overtrue\LaravelWechat\Facade::class,//微信门面
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
     ],
 
 ];

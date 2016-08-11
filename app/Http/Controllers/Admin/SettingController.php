@@ -17,7 +17,7 @@ class SettingController extends AdminController
             'website_name' => 'required|max:128',
             'website_slogan' => 'sometimes|max:128',
             'website_welcome' => 'sometimes|max:256',
-            'website_url' => 'required|url',
+           // 'website_url' => 'required|url',
             'website_icp' => 'sometimes|max:128',
             'website_cache_time' => 'sometimes|digits_between:0,8640',
             'website_admin_email' => 'required|email',

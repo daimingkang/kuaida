@@ -85,6 +85,7 @@ class IndexController extends Controller
             return  FriendshipLink::where('status','=',1)->orderBy('sort','asc')->orderBy('created_at','asc')->take(50)->get();
         });
 
+
         return view('theme::home.index')->with(compact('recommendItems','hotExperts','newestQuestions','rewardQuestions','hotArticles','newestArticles','newestNotices','hotTags','topCoinUsers','friendshipLinks'));
 
     }
