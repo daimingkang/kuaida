@@ -35,9 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'qq' => [
-        'client_id' => env('OAUTH_QQ_KEY'),
-        'client_secret' => env('OAUTH_QQ_SECRET'),
-        'redirect' => env('OAUTH_QQ_REDIRECT'),
+        'client_id' => env('QQ_KEY'),
+        'client_secret' => env('QQ_SECRET'),
+        'redirect' => env('QQ_REDIRECT_URI'),
     ],
     'weibo' => [
         'client_id' => env('OAUTH_WEIBO_KEY'),

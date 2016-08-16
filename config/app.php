@@ -138,7 +138,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Latrell\Alipay\AlipayServiceProvider::class,//支付宝
         Overtrue\LaravelWechat\ServiceProvider::class,//微信
-        Laravel\Socialite\SocialiteServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
